@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projeto login</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/media-query.css">
 </head>
@@ -19,15 +21,22 @@
                 <p>Welcome! again. login up to acces your count and make settings in your environment </p>
                 <form action="login.php" method="post">
 
-                    <label for="iname">name</label>
-                    <input type="text" name="name" id="
-                    iname"><br>
+                    <div class="campo">
 
-                    <label for="iemail">email</label>
-                    <input type="email" name="email" id="iemail"><br>
+                        <label for="iemail"><span class="material-symbols-outlined">person</span></label>
+                        <input type="email" name="email" id="iemail" placeholder="your address" autocomplete="email" required maxlength="30">
+                        <label for="iemail">login</label>
+                    </div>
                 
-                    <label for="ipass">password</label>
-                    <input type="password" name="password" id="ipass" >
+                    <div class="campo">
+
+                        <label for="ipass"><span class="material-symbols-outlined">vpn_Key</span></label>
+                        <input type="password" name="password" id="ipass" placeholder="password" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="ipass">password</label>
+
+                    </div>
+                    <input type="submit" value="entrar">
+                    <a href="forgot.html">forgot password <span class="material-symbols-outlined">mail</span</a>
                 </form>
 
             </div>
